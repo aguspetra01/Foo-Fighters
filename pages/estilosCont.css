@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/miembros2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*
+.imagenFondo{
+    width: 100%;
+    height: 100%;
+}*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+.encabezadoCont{
+    width: 100%;
+    height: 100px;
+/*  font-family: 'Roboto', regular;*/
+    font-family: 'Louis George Café', regular;
+}
+
+.logo>img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+nav{
+    padding-top: 40px; /*60px*/
+    padding-right: 40px;
+    float: right;
+}
+
+nav > a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    font-style: italic;
+    font-family: 'Louis George Café', regular;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    text-decoration:wavy;
+    color: rgb(255, 255, 255);
+}
+
+/*FORMULARIO*/
+
+.formulario{
+    width: 400px;
+    height: 450px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 12px 12px 10px rgb(56, 56, 56);
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.formulario>h4{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.ingresarTexto{
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: 'Louis George Café', regular;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+
+.elegirPais{
+    width: 200px;
+    height: 35px;
+    border-style: none;
+    font-family: 'Louis George Café', regular;
+    font-size: 14px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border: 1px white  solid;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 15px;
+}
+
+.botones{
+    width: 300px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Louis George Café', regular;
+    border-radius: 100px;
+    border-style: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+/*Pie de Pagina*/
+.pieDePagina{
+    width: 100%;
+    height: 130px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='100%' height='130' preserveAspectRatio='none' viewBox='0 0 1442 130'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1033%26quot%3b)' fill='none'%3e%3crect width='1442' height='130' x='0' y='0' fill='rgba(22%2c 22%2c 22%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c452.347C82.143%2c437.944%2c137.637%2c365.934%2c214.726%2c334.12C315.509%2c292.527%2c459.367%2c328.022%2c520.309%2c237.617C579.156%2c150.32%2c510.589%2c32.597%2c487.176%2c-70.045C465.643%2c-164.443%2c448.084%2c-260.383%2c389.183%2c-337.229C328.058%2c-416.976%2c248.014%2c-488.951%2c149.808%2c-510.198C53.941%2c-530.939%2c-38.597%2c-479.529%2c-132.136%2c-450.015C-223.669%2c-421.134%2c-325.378%2c-408.798%2c-391.637%2c-339.356C-459.077%2c-268.676%2c-471.691%2c-166.158%2c-493.782%2c-70.995C-517.861%2c32.732%2c-570.557%2c143.501%2c-526.198%2c240.307C-481.843%2c337.104%2c-368.021%2c379.185%2c-269.263%2c418.981C-183.643%2c453.483%2c-90.923%2c468.289%2c0%2c452.347' fill='%230e0e0e'%3e%3c/path%3e%3cpath d='M1442 649.382C1544.797 659.773 1656.979 655.343 1740.753 594.8679999999999 1823.343 535.248 1847.439 426.823 1882.69 331.256 1915.46 242.417 1941.532 153.248 1938.561 58.605000000000004 1935.315-44.803 1927.596-154.144 1864.872-236.421 1800.6779999999999-320.625 1694.749-355.685 1595.208-391.779 1489.818-429.994 1376.108-491.20899999999995 1271.201-451.688 1166.722-412.328 1123.528-290.714 1068.73-193.44 1023.354-112.89099999999999 1008.028-24.671999999999997 980.8679999999999 63.699 947.9259999999999 170.881 848.809 277.69399999999996 892.147 381.11 935.231 483.918 1079.513 489.274 1179.696 538.153 1266.814 580.658 1345.557 639.633 1442 649.382' fill='%231e1e1e'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1033'%3e%3crect width='1442' height='130' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    box-sizing: border-box;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.redesSociales>a>i{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.redesSociales>a>#facebook:hover{
+    color: rgb(66, 103, 178);
+}
+.redesSociales>a>#instagram:hover{
+    color: #c23284;
+}
+.redesSociales>a>#twitter:hover{
+    color: rgb(8, 129, 185);
+}
+.redesSociales>a>#youtube:hover{
+    color: rgb(185, 10, 10);
+}
+
+.pieDePagina> p{
+    font-family: 'Coolvetica', regular;
+    color: white;
+    padding-top: 10px;
+}
