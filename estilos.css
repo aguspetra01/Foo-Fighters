@@ -54,6 +54,7 @@ html{
     float: left;
     margin-left: 40px;
     margin-top: 20px;
+    transition: all 1.5s;
 }
 
 nav{
@@ -70,11 +71,22 @@ nav > a{
     font-family: 'Louis George Café', regular;
     font-size: 20px;
     font-weight: bold;
+    transition: all 0.5s;
+}
+
+.logo>img:hover{
+/*    transform: scale(1.2);*/
+/*    transition: all 0.5s;*/
+    transform: rotate(360deg);
+    transition: all 1.5s;
 }
 
 nav > a:hover{
     text-decoration:wavy;
     color: rgb(165, 165, 165);
+/*  transform: translateY(-10);*/
+    font-size: 25px;
+    transition: all 0.5s;
 }
 /*
 .wave{
@@ -131,7 +143,14 @@ nav > a:hover{
     height: 400px;
     text-align: center;
     padding: 10px;
+    transition: all 0.5s;
 }
+
+.infoIndex:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
 #tituloIndex{
     font-size: 55px;
     font-family: 'Permanent Marker', cursive;
@@ -147,9 +166,13 @@ nav > a:hover{
     float: right;
     width: 600px;
     height: 400px;
+    transition: all 0.5s;
 }
 
-
+.spotify:hover{
+    transition: all 0.5s;
+    box-shadow: 15px 15px 12px 0px rgba(53, 53, 53, 0.75);
+}
 
 .multimedia{
     display: flex;
@@ -161,6 +184,12 @@ nav > a:hover{
     border-radius: 12px;
     width: 600px;
     height: 400px;
+    transition: all 1.5s;
+}
+
+.videos--posicion:hover{
+    transition: all 0.5s;
+    box-shadow: 15px 15px 12px 0px rgba(53, 53, 53, 0.75);
 }
 
 /*Pie de Pagina*/
@@ -180,7 +209,13 @@ nav > a:hover{
     margin-bottom: 20px;
     color: white;
     text-align: center;
+    transition: all 0.5s;
 }
+.redesSociales>a>i:hover{
+    font-size: 40px;
+    transition: all 0.5s;
+}  
+
 
 .redesSociales>a>#facebook:hover{
     color: rgb(66, 103, 178);
@@ -215,9 +250,15 @@ nav > a:hover{
     font-size: 22px;
     line-height: 35px;
     box-shadow: 0 0 10px rgb(107, 107, 107);
+    transition: all 0.5s;
 }
 .subir>i{
     color: white;
+}
+
+.subir:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
 }
 
 /*   @MEDIA QUERY */
@@ -449,6 +490,14 @@ nav > a:hover{
     grid-row-gap: 20px;
     grid-column-gap: 30px;
 }
+.borderMiembros{
+    transition: all 1s;
+}
+.borderMiembros:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
 #imgMiembro1{
     grid-area: foto1;
     background-image: url(img/davegrohl.jpg);
@@ -494,6 +543,7 @@ nav > a:hover{
     margin-left: 60px;
     margin-right: 60px;
 }
+
 #nombMiem1{
     grid-area: texto1;
 }
