@@ -32,12 +32,14 @@ html{
     float: left;
     margin-left: 40px;
     margin-top: 20px;
+    transition: all 1.5s;
 }
 
 nav{
     padding-top: 40px; /*60px*/
     padding-right: 40px;
     float: right;
+    display: flex;
 }
 
 nav > a{
@@ -48,11 +50,22 @@ nav > a{
     font-family: 'Louis George Café', regular;
     font-size: 20px;
     font-weight: bold;
+    transition: all 0.5s;
+}
+
+.logo>img:hover{
+/*    transform: scale(1.2);*/
+/*    transition: all 0.5s;*/
+    transform: rotate(360deg);
+    transition: all 1.5s;
 }
 
 nav > a:hover{
     text-decoration:wavy;
     color: rgb(255, 255, 255);
+/*  transform: translateY(-10);*/
+    font-size: 25px;
+    transition: all 0.5s;
 }
 
 /*FORMULARIO*/
@@ -130,6 +143,11 @@ nav > a:hover{
     text-align: center;
 }
 
+.redesSociales{
+    display: flex;
+    justify-content: center;
+}
+
 .redesSociales>a>i{
     margin-left: 20px;
     margin-right: 20px;
@@ -137,7 +155,12 @@ nav > a:hover{
     margin-bottom: 20px;
     color: white;
     text-align: center;
+    transition: all 0.5s;
 }
+.redesSociales>a>i:hover{
+    font-size: 40px;
+    transition: all 0.5s;
+}  
 
 .redesSociales>a>#facebook:hover{
     color: rgb(66, 103, 178);

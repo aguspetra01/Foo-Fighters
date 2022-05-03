@@ -61,6 +61,7 @@ nav{
     padding-top: 40px; /*60px*/
     padding-right: 40px;
     float: right;
+    display: flex;
 }
 
 nav > a{
@@ -200,6 +201,11 @@ nav > a:hover{
     box-sizing: border-box;
     padding-top: 20px;
     text-align: center;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: center;
 }
 
 .redesSociales>a>i{
