@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FF Miembros</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos.css">
     <link rel="shortcut icon" href="../img/faviconFF.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,57 +26,8 @@
         </nav>
     </header>   
 
-<!--
-    <section class="miembros">
-        <div class="galeriaMiembros">   
-
-            <div class="contenedorMiembro">
-                <div class="imagenMiembros">
-                    <img src="../img/davegrohl.jpg" alt="">
-                </div>
-                <p class="nombreMiembro">Dave Grohl</p>
-            </div>
-
-            <div class="contenedorMiembro">
-                <div class="imagenMiembros">
-                    <img src="../img/natemendel.jpg" alt="">
-                </div>
-                <p class="nombreMiembro">Nate Mendel</p>
-            </div>    
-            
-            <div class="contenedorMiembro">    
-                <div class="imagenMiembros">
-                    <img src="../img/taylorhawkins.jpg" alt="">
-                </div>
-                <p class="nombreMiembro">Taylor Hawkins</p>
-            </div>
-
-            <div class="contenedorMiembro">
-                <div class="imagenMiembros">
-                    <img src="../img/patsmear.jpg" alt="">
-                </div>
-                <p class="nombreMiembro">Pat Smear</p>
-            </div>
-
-            <div class="contenedorMiembro">
-                <div class="imagenMiembros">
-                    <img src="../img/chrisshiflett.jpg" alt="">
-                </div>
-                <p class="nombreMiembro">Chris Shiflett</p>
-            </div>
-
-            <div class="contenedorMiembro">
-                <div class="imagenMiembros">
-                    <img src="../img//ramijaffee.jpg" alt="">
-                </div>
-                <p class="nombreMiembro">Rami Jaffee</p>
-            </div>
-
-        </div> 
-    </section>
--->
     <h4 id="tituloMiembros">Miembros</h4>
-    <div id="grillaMiembros">
+<!--<div id="grillaMiembros">
         <div class="imagenesMiembros borderMiembros" id="imgMiembro1"></div>
         <div class="imagenesMiembros borderMiembros" id="imgMiembro2"></div>
         <div class="imagenesMiembros borderMiembros" id="imgMiembro3"></div>
@@ -88,8 +41,42 @@
         <p class="nombreMiembro" id="nombMiem4">Pat Smear</p>
         <p class="nombreMiembro" id="nombMiem5">Chris Shiflett</p>
         <p class="nombreMiembro" id="nombMiem6">Rami Jaffee</p>
-    </div>
+    </div>-->
 
+    <div class="container" id="grillaMiembros">
+        <div class="row">
+            <div class="contMiem contMiem1 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <img src="../img/davegrohl.jpg" alt="">
+                <h2 class="nombMiembro">Dave Grohl</h2>
+                <p class="infoMiembro">Cantante y guitarrista (1995-actualidad)</p>
+            </div>
+            <div class="contMiem contMiem2 col-sm-12 col-md-6 col-lg-4  col-xl-4">
+                <img src="../img/natemendel.jpg" alt="">
+                <h2 class="nombMiembro">Nate Mendel</h2>
+                <p class="infoMiembro">Bajista (1995-actualidad)</p>
+            </div>
+            <div class="contMiem contMiem3 col-sm-12 col-md-6 col-lg-4  col-xl-4">
+                <img src="../img/taylorhawkins.jpg" alt="">
+                <h2 class="nombMiembro">Taylor Hawkins</h2>
+                <p class="infoMiembro">Baterista y coros (1997-2022)</p>
+            </div>
+            <div class="contMiem contMiem4 col-sm-12 col-md-6 col-lg-4  col-xl-4">
+                <img src="../img/patsmear.jpg" alt="">
+                <h2 class="nombMiembro">Pat Smear</h2>
+                <p class="infoMiembro">Guitarra (1995-1997; 2010-actualidad; como miembro de apoyo: 2005-2010)</p>
+            </div>
+            <div class="contMiem contMiem5 col-sm-12 col-md-6 col-lg-4  col-xl-4">
+                <img src="../img/chrisshiflett.jpg" alt="">
+                <h2 class="nombMiembro">Chris Shiflett</h2>
+                <p class="infoMiembro">Guitarra y coros (1999-presente)</p>
+            </div>
+            <div class="contMiem contMiem6 col-sm-12 col-md-6 col-lg-4  col-xl-4">
+                <img src="../img/ramijaffee.jpg" alt="">
+                <h2 class="nombMiembro">Rami Jaffee</h2>
+                <p class="infoMiembro">Teclado (2017-presente, como miembro de apoyo y sesión: 2005-2017)</p>
+            </div>
+        </div>
+    </div>
     <!--PIE DE PÁGINA-->
     <footer class="pieDePagina">
 
@@ -104,5 +91,10 @@
         
     </footer>
     <a href="#" class="subir"><i class="fa-solid fa-chevron-up"></i></a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>

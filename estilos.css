@@ -389,90 +389,25 @@ nav > a:hover{
 }
 
 /*------------------BIOGRAFÍA------------------*/
-#grillaBio{
-    display: grid;
-    grid-template-areas: "foto1  texto1 texto1"
-                         "texto2 texto2  foto2"
-                         "foto3  texto3 texto3";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
-    margin: 60px;
-    margin-top: 30px;
-    font-family: 'Louis George Café', regular;
-    grid-row-gap: 18px;
-    grid-column-gap: 10px;
-}
-/*
-.borderBio{
-    border: 5px black solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
-#imgBio1{
-    grid-area: foto1;
-    background-image: url(img/portada9.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgBio2{
-    grid-area: foto2;
-    background-image: url(img/portada2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgBio3{
-    grid-area: foto3;
-    background-image: url(img/portada7.jpg);
-    background-size: cover;
-    background-position: top;
-}
-.imagenesBio{
-    margin: 20px;
-    box-shadow: 10px 10px 7px 0px rgba(53, 53, 53, 0.75);
-    border-radius: 5px;
-}
-
-#textoBio1{
-    grid-area: texto1;
-}
-
-#textoBio2{
-    grid-area: texto2;
-}
-
-#textoBio3{
-    grid-area: texto3;
-}
-.textoBio{
-    font-size: 20px;
-    padding: 20px;
-    background-color: rgb(230, 230, 230);
-    border-radius: 5px;
-    overflow:scroll;
-    box-shadow: 10px 10px 7px 0px rgba(53, 53, 53, 0.75);
-    text-align: left;
-}
 #tituloBio{
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     font-size: 40px;
     margin-top: 30px;
+    margin-bottom: 40px;
 }
-
-/* MEDIA QUERIES */
-@media only screen and (max-width:1000){
-    #grillaBio{
-        grid-template-areas:"foto1  texto1"
-                            "texto2 texto1"
-                            "texto2  foto2"
-                            "texto2 texto3"
-                            "foto3  texto3";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5,200px);
-    }
+#grillaBio{
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
-
+.imgBio>img{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.row{
+    overflow: hidden;
+}
 /*------------------MIEMBROS------------------*/
 #tituloMiembros{
     text-align: center;
@@ -482,235 +417,30 @@ nav > a:hover{
 }
 
 #grillaMiembros{
-    display: grid;
-    grid-template-areas: "foto1   foto2   foto3"
-                         "texto1  texto2  texto3"
-                         "foto4   foto5   foto6"
-                         "texto4  texto5  texto6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 40px 300px 40px;
-    margin: 120px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    font-family: 'Louis George Café', regular;
-    grid-row-gap: 20px;
-    grid-column-gap: 30px;
-}
-.borderMiembros{
-    transition: all 1s;
-}
-.borderMiembros:hover{
-    transform: scale(1.05);
-    transition: all 1s;
-}
-
-#imgMiembro1{
-    grid-area: foto1;
-    background-image: url(img/davegrohl.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgMiembro2{
-    grid-area: foto2;
-    background-image: url(img/natemendel.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgMiembro3{
-    grid-area: foto3;
-    background-image: url(img/taylorhawkins.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgMiembro4{
-    grid-area: foto4;
-    background-image: url(img/patsmear.jpg);
-    background-size: cover;
-    background-position: top;
-}
-#imgMiembro5{
-    grid-area: foto5;
-    background-image: url(img/chrisshiflett.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgMiembro6{
-    grid-area: foto6;
-    background-image: url(img/ramijaffee.jpg);
-    background-size: cover;
-    background-position: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .nombreMiembro{
     text-align: center;
-    font-size: 20px;
-    line-height: 40px;
     background-color: rgb(142, 157, 184);
-    margin-left: 60px;
-    margin-right: 60px;
 }
 
-#nombMiem1{
-    grid-area: texto1;
-}
-#nombMiem2{
-    grid-area: texto2;
-}
-#nombMiem3{
-    grid-area: texto3;
-}
-#nombMiem4{
-    grid-area: texto4;
-}
-#nombMiem5{
-    grid-area: texto5;
-}
-#nombMiem6{
-    grid-area: texto6;
+.contMiem{
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/*  MEDIA QUERIES  */
-@media only screen and (max-width:1114px){
-    .nombreMiembro{
-        font-size: 16px;
-    }
+.contMiem>p{
+    font-size: 18px;
 }
-@media only screen and (max-width:1000px){
-    #grillaMiembros{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 250px 40px 250px 40px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 
-    .encabezado> nav > a{
-        font-size: 18px;
-    }
+.contMiem>img{
+    width: 100%;
+}
 
-    nav{
-        padding-top: 30px; /*60px*/
-        padding-right: 30px;
-    }
-    .logo>img{
-        width: 80px;
-        height: 80px;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-}
-@media only screen and (max-width:980px){
-    .nombreMiembro{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-}
-@media only screen and (max-width:920px){
-    #grillaMiembros{
-        grid-template-areas: "foto1  foto2"
-                             "texto1 texto2"
-                             "foto3  foto4"
-                             "texto3 texto4"
-                             "foto5  foto6"
-                             "texto5 texto6";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 40px 300px 40px 300px 40px;
-        grid-column-gap: 40px;
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-}
-@media only screen and (max-width:800px){
-    #grillaMiembros{
-        grid-column-gap: 35px;
-        margin-left: 70px;
-        margin-right: 70px;
-    }
-    .encabezado> nav > a{
-        font-size: 15px;
-    }
-
-    nav{
-        padding-top: 20px; /*60px*/
-        padding-right: 20px;
-    }
-    .logo>img{
-        width: 70px;
-        height: 70px;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-}
-@media only screen and (max-width:740px){
-    #grillaMiembros{
-        grid-template-rows: 200px 30px 200px 30px 200px 30px;
-        grid-column-gap: 30px;
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    .nombreMiembro{
-        font-size: 14px;
-        line-height: 30px;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    nav{
-        padding-right: 15px;
-    }
-    nav>a{
-        padding-left: 7px;
-    }
-}
-@media only screen and (max-width:588px){
-    #grillaMiembros{
-        grid-template-rows: 190px 25px 190px 25px 190px 25px;
-        grid-column-gap: 25px;
-    }
-    .nombreMiembro{
-        font-size: 14px;
-        line-height: 25px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-}
-@media only screen and (max-width:480px){
-    #grillaMiembros{
-        grid-template-areas: "foto1"
-                             "texto1"
-                             "foto2"
-                             "texto2"
-                             "foto3"
-                             "texto3"
-                             "foto4"
-                             "texto4"
-                             "foto5"
-                             "texto5"
-                             "foto6"
-                             "texto6";
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px 40px 300px 40px 300px 40px 300px 40px 300px 40px 300px 40px;
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-    .nombreMiembro{
-        font-size: 20px;
-        line-height: 40px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-}
-@media only screen and (max-width:400px){
-    #grillaMiembros{
-        grid-template-rows: 270px 40px 270px 40px 270px 40px 270px 40px 270px 40px 270px 40px;
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-}
-@media only screen and (min-width:320px) and (max-width:350px){
-    #grillaMiembros{
-        grid-template-rows: 250px 40px 250px 40px 250px 40px 250px 40px 250px 40px 250px 40px;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+.nombMiembro{
+    margin-top: 20px;
 }
 
 /*------------------DISCOS------------------*/
