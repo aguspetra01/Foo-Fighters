@@ -297,7 +297,6 @@ nav > a:hover{
 @media only screen and (max-width:1000px){
     .encabezadoInicio> nav > a{
         font-size: 16px;
-        height: 550px;
     }
 }
 @media only screen and (max-width:800px){
