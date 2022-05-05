@@ -403,7 +403,9 @@ nav > a:hover{
 .imgBio>img{
     width: 100%;
     overflow: hidden;
-    padding-top: 10px;
+}
+.textoBio{
+    font-family: 'Louis George Café', regular;
 }
 .row{
     overflow: hidden;
@@ -421,16 +423,11 @@ nav > a:hover{
     margin-bottom: 50px;
 }
 
-.nombreMiembro{
-    text-align: center;
-    background-color: rgb(142, 157, 184);
-}
-
 .contMiem{
     text-align: center;
     margin-bottom: 20px;
 }
-
+ 
 .contMiem>p{
     font-size: 18px;
 }
@@ -441,6 +438,9 @@ nav > a:hover{
 
 .nombMiembro{
     margin-top: 20px;
+    font-family: 'Louis George Café', regular;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 /*------------------DISCOS------------------*/
@@ -450,129 +450,26 @@ nav > a:hover{
     font-size: 40px;
     margin-top: 30px;
 }
+
 #grillaDiscos{
-    display: grid;
-    grid-template-areas: "foto1    foto2    foto3   foto4   foto5"
-                         "texto1   texto2   texto3  texto4  texto5"
-                         "foto6    foto7    foto8   foto9   foto10"
-                         "texto6   texto7   texto8  texto9  texto10";
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 220px 35px 220px 35px;
-    margin: 60px;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+}
+
+.contDisc>img{
+    width: 100%;
+}
+
+.contDisc>h2{
+    font-size: 24px;
     font-family: 'Louis George Café', regular;
-    grid-row-gap: 20px;
-    grid-column-gap: 30px;
-}
-#imgDisco1{
-    grid-area: foto1;
-    background-image: url(img/albumFF.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgDisco2{
-    grid-area: foto2;
-    background-image: url(img/albumTCATS.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgDisco3{
-    grid-area: foto3;
-    background-image: url(img/albumTINLTL.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgDisco4{
-    grid-area: foto4;
-    background-image: url(img/albumOBO.jpg);
-    background-size: cover;
-    background-position: top;
-}
-#imgDisco5{
-    grid-area: foto5;
-    background-image: url(img/albumIYH.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgDisco6{
-    grid-area: foto6;
-    background-image: url(img/albumESPG.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgDisco7{
-    grid-area: foto7;
-    background-image: url(img/albumWL.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgDisco8{
-    grid-area: foto8;
-    background-image: url(img/albumSH.jpg);
-    background-size: cover;
-    background-position: top;
-}
-#imgDisco9{
-    grid-area: foto9;
-    background-image: url(img/albumCAG.jpg);
-    background-size: cover;
-    background-position: center;
-}
-#imgDisco10{
-    grid-area: foto10;
-    background-image: url(img/albumMAM.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.nombreDisco{
-    text-align: center;
-    font-size: 14px;
-    line-height: 35px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 5px;
-}
-#nombMiem1{
-    grid-area: texto1;
-}
-#nombMiem2{
-    grid-area: texto2;
-}
-#nombMiem3{
-    grid-area: texto3;
-}
-#nombMiem4{
-    grid-area: texto4;
-}
-#nombMiem5{
-    grid-area: texto5;
-}
-#nombMiem6{
-    grid-area: texto6;
-}
-#nombMiem7{
-    grid-area: texto7;
-}
-#nombMiem8{
-    grid-area: texto8;
-}
-#nombMiem9{
-    grid-area: texto9;
-}
-#nombMiem10{
-    grid-area: texto10;
+    font-weight: bold;
 }
 
+.contDisc{
+    margin-bottom: 20px;
+}
 
-
-/*  MEDIA QUERIES  */
-@media only screen and (max-width:1250){
-    #tituloDiscos{
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
- /*       font-family: 'Permanent Marker', cursive;*/
-        font-size: 40px;
-        margin-top: 30px;
-    }
+.nombDisc{
+    margin-top: 20px;
 }

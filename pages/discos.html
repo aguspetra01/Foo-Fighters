@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FF Discos</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos.css">
     <link rel="shortcut icon" href="../img/faviconFF.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,29 +28,64 @@
 
 <!--/////////////////////////////////////////////////////////////////////////////////////-->
     <h4 id="tituloDiscos">Discos</h4>
-    <div id="grillaDiscos">
-        <div class="imagenesDiscos borderDiscos" id="imgDisco1"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco2"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco3"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco4"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco5"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco6"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco7"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco8"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco9"></div>
-        <div class="imagenesDiscos borderDiscos" id="imgDisco10"></div>
-
-        <p class="nombreDisco" id="nombDisc1">Foo Fighters</p>
-        <p class="nombreDisco" id="nombDisc2">The Color And The Shape</p>
-        <p class="nombreDisco" id="nombDisc3">There Is Nothing Left To Lose</p>
-        <p class="nombreDisco" id="nombDisc4">One By One</p>
-        <p class="nombreDisco" id="nombDisc5">In Your Honor</p>
-        <p class="nombreDisco" id="nombDisc6">E, S, P & G</p>
-        <p class="nombreDisco" id="nombDisc7">Wasting Light</p>
-        <p class="nombreDisco" id="nombDisc8">Sonic Highways</p>
-        <p class="nombreDisco" id="nombDisc9">Concrete And Gold</p>
-        <p class="nombreDisco" id="nombDisc10">Medicine At Midnight</p>
+    <div class="container" id="grillaDiscos">
+        <div class="row">
+            <div class="contDisc contDisc1 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumFF.jpg" alt="">
+                <h2 class="nombDisc">Foo Fighters</h2>
+                <p class="infoDisc">1995</p>
+            </div>
+            <div class="contDisc contDisc2 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumTCATS.jpg" alt="">
+                <h2 class="nombDisc">The Color And The Shape</h2>
+                <p class="infoDisc">1997</p>
+            </div>
+            <div class="contDisc contDisc3 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumTINLTL.jpg" alt="">
+                <h2 class="nombDisc">There Is Nothing Left To Lose</h2>
+                <p class="infoDisc">1999</p>
+            </div>
+            <div class="contDisc contDisc4 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumOBO.jpg" alt="">
+                <h2 class="nombDisc">One By One</h2>
+                <p class="infoDisc">2002</p>
+            </div>
+            <div class="contDisc contDisc5 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumIYH.jpg" alt="">
+                <h2 class="nombDisc">In Your Honor</h2>
+                <p class="infoDisc">2005</p>
+            </div>
+            <div class="contDisc contDisc6 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumESPG.jpg" alt="">
+                <h2 class="nombDisc">Echoes, Silence, Patience & Grace</h2>
+                <p class="infoDisc">2007</p>
+            </div>
+            <div class="contDisc contDisc7 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumWL.jpg" alt="">
+                <h2 class="nombDisc">Wasting Light</h2>
+                <p class="infoDisc">2011</p>
+            </div>
+            <div class="contDisc contDisc8 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumSH.jpg" alt="">
+                <h2 class="nombDisc">Sonic Highways</h2>
+                <p class="infoDisc">2014</p>
+            </div>
+            <div class="contDisc contDisc9 col-sm-12 col-md-6 col-lg-4  col-xl-3">
+                <img src="../img/albumCAG.jpg" alt="">
+                <h2 class="nombDisc">Concrete And Gold</h2>
+                <p class="infoDisc">2017</p>
+            </div>
+            <div class="contDisc contDisc10 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <img src="../img/albumMAM.jpg" alt="">
+                <h2 class="nombDisc">Medicine At Midnight</h2>
+                <p class="infoDisc">2021</p>
+            </div>
+        </div>
     </div>
+
+
+
+
 
     <!--PIE DE PÁGINA-->
     <footer class="pieDePagina">
@@ -63,5 +100,10 @@
         
     </footer>
     <a href="#" class="subir"><i class="fa-solid fa-chevron-up"></i></a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
